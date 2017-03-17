@@ -15,14 +15,14 @@ public class Lieu_Maison {
 		chambre.SortieNord=true;
 		
 		cuisine.Sud=chambre;
-		cuisine.Ouest=toilette;
+		cuisine.Est=toilette;
 		cuisine.Nord=Salon;
 		cuisine.SortieEst=true;
 		cuisine.SortieNord=true;
 		cuisine.SortieSud=true;
 		
-		toilette.Est=cuisine;
-		toilette.SortieEst=true;
+		toilette.Ouest=cuisine;
+		toilette.SortieOuest=true;
 		
 		Salon.Sud=cuisine;
 		Salon.SortieSud=true;

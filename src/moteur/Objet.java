@@ -6,7 +6,6 @@ import java.util.List;
 public class Objet {
 	public String name;
 	
-	
 	public int reservoir=0;
 	public int degat=0;
 	public int creuse=0;
@@ -25,9 +24,6 @@ public class Objet {
 	public int lumineux=0;
 	public int repose=0;
 	public int escalader=0;	
-	
-	
-	
 	
 	public int faitdufeu=0;
 	public int brule=0;
