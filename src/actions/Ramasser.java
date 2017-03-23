@@ -5,19 +5,23 @@ import moteur.Objet;
 import moteur.Personnage;
 import moteur.Player;
 
-public class Entrer extends £Action{
+public class Ramasser extends £Action{
 
+	@Override
 	public void fait(Player p, Objet o, Personnage pe) {
-		p.setEndroit(p.LieuActuel.EntreePiece);
+		p.endroit().inventaire.remove(o);
+		p.inventaire.add(o);
 		Lancer.aff.ActionDone(this, o);
 	}
 
 	@Override
 	public boolean possible(Player p, Objet o, Personnage pe) {
-		return (p.PieceActuelle==null && p.LieuActuel.entree==true);
+		return (o!=null && p.endroit().inventaire.contains(o) && p.PlaceDispo()>o.place);
+	}
+	
+	public Ramasser(){
+		name=Lancer.langue.pick();
 	}
 
-	public Entrer(){
-		name=Lancer.langue.goIn();
-	}
+	
 }

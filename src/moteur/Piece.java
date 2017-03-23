@@ -15,4 +15,6 @@ public class Piece extends endroit{
 	
 	public boolean sortie;
 	public Lieu Sortie=null;
+	
+	
 }

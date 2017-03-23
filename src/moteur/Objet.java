@@ -33,6 +33,11 @@ public class Objet {
 	
 	public boolean besoin_electricite=false;
 	public boolean besoin_eau=false;
+	public boolean actif=false;
+	public boolean allumable=false;
+	
+	public Objet Onbreak;
+	public boolean breakable=false;
 	
 	public int besoin_force=0;
 	public int besoin_agilite=0;
@@ -49,6 +54,15 @@ public class Objet {
 	public Objet(String s, LinkedList<Objet> l){
 		name=s;
 		inventaire=l;
+	}
+	
+	public void RemoveFromAnywhere(Player pl){
+		if(pl.inventaire.contains(this)){
+			pl.inventaire.remove(this);
+		}
+		else{
+			pl.endroit().inventaire.remove(this);
+		}
 	}
 	
 }

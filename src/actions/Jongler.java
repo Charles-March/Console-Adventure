@@ -5,19 +5,20 @@ import moteur.Objet;
 import moteur.Personnage;
 import moteur.Player;
 
-public class Entrer extends £Action{
+public class Jongler extends £Action{
 
+	@Override
 	public void fait(Player p, Objet o, Personnage pe) {
-		p.setEndroit(p.LieuActuel.EntreePiece);
-		Lancer.aff.ActionDone(this, o);
+		if(p.fun< 100) p.fun+=1;
+		Lancer.aff.ActionDone(this, o);		
 	}
 
 	@Override
 	public boolean possible(Player p, Objet o, Personnage pe) {
-		return (p.PieceActuelle==null && p.LieuActuel.entree==true);
+		return (o!=null && o.place<=2);
 	}
-
-	public Entrer(){
-		name=Lancer.langue.goIn();
+	
+	public Jongler(){
+		name=Lancer.langue.juggle();
 	}
 }

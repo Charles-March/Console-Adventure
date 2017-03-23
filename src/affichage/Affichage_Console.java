@@ -189,7 +189,7 @@ public class Affichage_Console implements _Affichage {
 		System.out.println("    - help       : Affiche certaine commande");
 		System.out.println("    - observer   : Affiche la liste des objets proche");
 		System.out.println("    - inventaire : Affiche l'inventaire du joueur");
-		System.out.println("    - utiliser   : Permet d'utiliser un objet");
+		System.out.println("    - utiliser   : Permet d'effectuer une action sur un objet");
 		System.out.println("");
 		System.out.println("Pour vous deplacer, entrez une direction (exemple : \"nord\") ou \"sortir\" et \"entrer\"");
 		System.out.println("\nIl manque plein d'autre commandes, a vous de les trouver :D");
@@ -219,8 +219,28 @@ public class Affichage_Console implements _Affichage {
 		else if(a instanceof Jeter){
 			System.out.println("Vous Jetez "+o.name+" par terre.");
 		}
-	
+		else if(a instanceof Allumer_Ordinateur){
+			System.out.println(o.name+" est maintenant allume");
+		}
+		else if(a instanceof Eteindre_Ordinateur){
+			System.out.println(o.name+" est maintenant eteint");
+		}
+		else if(a instanceof Jongler){
+			System.out.println("Jongler avec "+o.name+" vous amuse ?");
+		}
+		else if(a instanceof Escalader){
+			System.out.println("Vous apercevez un petit passage en hauteur, que vous vous empruntez hativement..");
+		}
+		else{
+			System.out.println("Action realisee avec succes");
+		}
 		PressToGo();
+	}
+
+	@Override
+	public void cantclimb() {
+		System.out.println("Vous essayez de grimper, mais ne voyez rien.. Peut etre n'etes vous pas monte assez haut ?");
+		
 	}
 
 }

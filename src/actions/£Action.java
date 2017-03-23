@@ -6,10 +6,10 @@ import moteur.*;
 public abstract class £Action {
 	public String name;
 	
-	public abstract void fait(Player p, Objet o);
+	public abstract void fait(Player pl, Objet o, Personnage pe);
 	
 	
-	public abstract boolean possible(Player p,Objet o);
+	public abstract boolean possible(Player pl,Objet o, Personnage pe);
 	
 	public boolean equal(String s){
 		String t=name.toLowerCase();

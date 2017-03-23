@@ -9,6 +9,7 @@ public class Objects_Pc {
 		a.communication=4;
 		a.fun=3;
 		a.place=10;
+		a.allumable=true;
 		a.message_echec="Vous ne trouvez pas le bouton pour allumer l'ordinateur.";
 		a.besoin_electricite=true;
 		return a;
@@ -21,6 +22,7 @@ public class Objects_Pc {
 		a.fun=3;
 		a.place=10;
 		a.besoin_electricite=true;
+		a.allumable=true;
 		a.message_echec="Il y a un ecran noir avec des lettres, mais cette langue vous est inconnue.";
 		return a;
 	}
@@ -31,6 +33,7 @@ public class Objects_Pc {
 		a.fun=8;
 		a.degat=5;
 		a.place=10;
+		a.allumable=true;
 		a.besoin_electricite=true;
 		a.message_echec="Vous ne trouvez pas la telecommande";
 		return a;

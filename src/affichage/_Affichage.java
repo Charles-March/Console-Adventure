@@ -15,5 +15,6 @@ public interface _Affichage {
 	public void PrintMiss();
 	public void PositionChanged(String direction);
 	public void ActionDone(£Action a, Objet o);
+	public void cantclimb();
 	
 }

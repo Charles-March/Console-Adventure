@@ -33,7 +33,7 @@ public class Francais implements _Language {
 
 	@Override
 	public String pick() {
-		return "recup";
+		return "ramasser";
 	}
 
 	@Override
@@ -69,5 +69,39 @@ public class Francais implements _Language {
 	@Override
 	public String goOut() {
 		return "sortir";
+	}
+
+	@Override
+	public String thro() {
+		return "jeter";
+	}
+
+	@Override
+	public String turnOn() {
+		return "allumer";
+	}
+
+	@Override
+	public String turnOff() {
+		return "eteindre";
+	}
+
+	@Override
+	public String juggle() {
+		return "jongler";
+	}
+
+	@Override
+	public String playPc() {
+		return "jouer";
+	}
+
+	@Override
+	public String onbreak() {
+		return "casser";
+	}
+	
+	public String climb(){
+		return "escalader";
 	}
 }

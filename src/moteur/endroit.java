@@ -11,8 +11,14 @@ public abstract class endroit {
 	public endroit Est=null;
 	public endroit Ouest=null;
 	
+	
+	public int SortieHauteur=0;
+	public endroit Hauteur=null;
+	public endroit RetourEnBas=null;
+	
 	public boolean SortieNord=false;
 	public boolean SortieSud=false;
 	public boolean SortieEst=false;
 	public boolean SortieOuest=false;
+	
 }

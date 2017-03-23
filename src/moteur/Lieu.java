@@ -12,5 +12,6 @@ public class Lieu extends endroit{
 	
 	public boolean entree=false;
 	public Piece EntreePiece=null;
+	
 
 }

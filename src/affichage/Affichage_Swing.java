@@ -67,4 +67,10 @@ public class Affichage_Swing implements _Affichage{
 		
 	}
 
+	@Override
+	public void cantclimb() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

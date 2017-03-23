@@ -17,6 +17,7 @@ public class Lancer {
 		p.name=aff.Start(p);
 		p.InitAction();
 		String s;
+		Personnage pe=null;
 		
 		ActionDefinies ad=null;
 		
@@ -27,7 +28,7 @@ public class Lancer {
 			if(!info(s) || o!=null){
 				if(o!=null) s=aff.GetAction(Player.ListeActionAffichee);
 				ad=new ActionDefinies(s, o);
-				if(!p.fait(ad)){
+				if(!p.fait(ad,pe)){
 					aff.PrintMiss();
 				}
 			}
